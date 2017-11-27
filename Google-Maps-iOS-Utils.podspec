@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/akievsk/google-maps-ios-utils.git"}
   s.requires_arc = true
   s.dependency 'GoogleMaps', '~> 2.5.0'
-  s.compiler_flags = '-fno-modules'
 
   s.subspec 'QuadTree' do |sp|
     sp.source_files = 'src/QuadTree/**/*.{h,m}'
