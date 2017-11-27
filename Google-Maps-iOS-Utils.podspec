@@ -13,10 +13,9 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.authors      = "Google Inc."
   s.platform     = :ios, '9.0'
-  s.source       = { :git => "https://github.com/googlemaps/google-maps-ios-utils.git",
-                     :tag => "v#{s.version.to_s}" }
+  s.source       = { :git => "https://github.com/akievsk/google-maps-ios-utils.git"}
   s.requires_arc = true
-  s.dependency 'GoogleMaps'
+  s.dependency 'GoogleMaps', '~> 2.5.0'
   s.compiler_flags = '-fno-modules'
 
   s.subspec 'QuadTree' do |sp|
